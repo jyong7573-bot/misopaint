@@ -61,6 +61,7 @@ button.primary, a.primary {
   background: var(--accent); color: var(--accent-ink); display: block; text-decoration: none;
 }
 button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.steps { margin: 0; padding-left: 1.4em; font-size: 17px; display: flex; flex-direction: column; gap: 6px; }
 .hint { font-size: 14px; color: var(--muted); margin: 0; }
 .status { font-size: 14px; color: var(--ok); font-weight: 500; min-height: 1.5em; margin: 0; }
 input[type="search"] {
@@ -96,8 +97,13 @@ input[type="search"] {
 
   <section aria-labelledby="h-biz">
     <h2 id="h-biz">사업자등록증 보내기</h2>
-    <p class="hint">세금계산서 발행에 필요합니다. 아래 버튼을 누르면 문자 창이 열립니다. 사업자등록증 사진을 첨부해서 보내주세요.</p>
-    <a class="primary" href="sms:01094637563?&body=%EC%82%AC%EC%97%85%EC%9E%90%EB%93%B1%EB%A1%9D%EC%A6%9D%20%EB%B3%B4%EB%82%B4%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.">문자로 사업자등록증 보내기</a>
+    <p class="hint">세금계산서 발행에 필요합니다.</p>
+    <ol class="steps">
+      <li>아래 파란 버튼을 누르면 <b>문자 창</b>이 열립니다.</li>
+      <li>문자 창에서 <b>사진 버튼</b>을 눌러 사업자등록증 사진을 고릅니다.</li>
+      <li><b>보내기</b>를 누르면 끝입니다.</li>
+    </ol>
+    <a class="primary" href="sms:01094637563">문자 창 열기</a>
     <p class="hint">버튼이 안 열리면 010-9463-7563으로 문자를 보내주세요.</p>
   </section>
 
